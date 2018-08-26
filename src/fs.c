@@ -170,7 +170,7 @@ char *sy_lookup_path(const char *name, const char *_path) {
   while (tok) {
     // path
     int len = strlen(tok) + 2 + strlen(name);
-    char *file = malloc(len);
+    char *file = (char *)malloc(len);
     if (!file) {
       free(path);
       return NULL;
