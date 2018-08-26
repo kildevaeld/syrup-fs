@@ -17,6 +17,9 @@ int sy_write_file(const char *filename, const char *buffer, size_t len);
 
 int sy_mkdir_p(const char *path, mode_t mode);
 
+char *sy_lookup(const char *exec);
+char *sy_lookup_path(const char *exec, const char *path);
+
 #ifdef __cplusplus
 }
 #endif
